@@ -1,0 +1,31 @@
+{
+    "initial_run": "C:\\MyApps\\ProgramA.exe",
+    
+    "watch": [
+        {
+            "type": "program",
+            "name": "ProgramA.exe",
+            "timeout_seconds": 30
+        },
+        {
+            "type": "log",
+            "name": "C:\\Logs\\app_events.log",
+            "pattern": "READY_FOR_SHUTDOWN",
+            "timeout_seconds": 90,
+            "encoding": "utf-8" 
+        }
+    ],
+    
+    "action": [
+        {
+            "action": "close",
+            "type": "program",
+            "name": "ProgramA.exe"
+        },
+        {
+            "action": "close",
+            "type": "program",
+            "name": "ProgramB.exe"
+        }
+    ]
+}

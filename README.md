@@ -81,9 +81,10 @@ ECHO All SmartDog jobs have finished.
 
 -----
 
-## ⚙️ Configuration (`config.json` / `config_*.json`)
+## ⚙️ Configuration File
 
 The configuration file is a single JSON object that defines the entire workflow for **SmartDog**.
+Checkout [example_config.json](./example_config.json) file.
 
 ### Structure
 
